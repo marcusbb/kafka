@@ -1,0 +1,10 @@
+{
+	"type":"record",
+	"name":"RoutableEncryptedMessage",
+	"namespace":"org.marcusbb.queue",
+	"fields":[
+		{"name":"headers","type":{"type":"map","values":"string"}},
+		{"name":"payload","type":{"type":"bytes","java-class":"[B"}},
+		{"name":"ts","type":"long"}
+		]
+}

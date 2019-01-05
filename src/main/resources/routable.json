@@ -1,0 +1,12 @@
+{"namespace": "org.marcusbb.queue.serialization",
+ "type": "record",
+ "name": "AvroClassifiedRoutable",
+ "fields": [
+     {"name":"ts", "type": "long", "default": -1},
+     {"name":"version", "type": "string", "default": "1.0.0"},
+     {"name":"headers", "type": {"type": "map", "values":"string"}, "default": "null"},
+     {"name":"public", "type": {"type": "map", "values":"string"}, "default": "null"},
+     {"name":"private", "type": {"type": "map", "values":"bytes"}, "default": "null"}
+      
+ ]
+}
